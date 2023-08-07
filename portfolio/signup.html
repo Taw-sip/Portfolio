@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+    <style>
+        
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(Images/black.jpg);
+            background-size: cover;
+            padding: 100px;
+            background-position: center;
+            height: 100vh;
+            padding: 300px 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+            color: rgb(14, 230, 230);
+           }
+    
+        
+        form label{
+            display: flex;
+            margin-top: 10px;
+            font-size: 18px;
+            color: rgb(0, 255, 255);
+            
+            transition: 1s;
+        }
+        
+    
+        form input{
+            width: 115%;
+            padding: 7px;
+            border: none;
+            background-color: transparent;
+            
+            border-bottom: #01fac4 solid 1px;
+            outline: none;
+            font-size: 1rem;
+            color: white;
+            
+            
+        }
+    
+        input[type="submit"]{
+            width: 360px;
+            height: 35px;
+            margin-top: 20px;
+            border: none;
+            background-color: #01fac4;
+            color: white;
+            font-size: 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 0;
+        }
+        .box{
+            
+            background-color: transparent;
+            height: 100vh;
+            width: 100vh;
+        
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login{
+            background-color: #121921;
+            width: 400px;
+            height: 620px;
+            margin: auto; 
+            font-family: 'Roboto', sans-serif;
+            border: none;
+            border-radius: 10px;
+            
+            /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5), -5px -5px 20px rgba(0, 0, 0, 0.5); */
+            padding: 5px;            
+            z-index: 5;
+            position: absolute;
+            
+            
+        }
+    
+        form{
+            width: 300px;
+            margin-left: 20px;
+
+        }
+    
+        a{
+            color: coral;
+        }
+
+        .para-1{
+            text-align: center;
+            padding-top: 10px;
+            font-size: 15px;
+            color: white;
+        }
+
+        .animation{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 406px;
+            height: 626px;
+            background-color: #121921;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+         }
+         .animation::before{
+            width: 400px;
+            height: 620px;
+            position: absolute;
+            content: '';
+            top: -50%;
+            left: -50%;
+            background: linear-gradient(60deg,transparent,#45f3ff,#45f3ff);
+            transform-origin: bottom right;
+            animation: animate linear 6s infinite;
+         }
+
+         .animation::after{
+            width: 400px;
+            height: 620px;
+            position: absolute;
+            content: '';
+            top: -50%;
+            left: -50%;
+            background: linear-gradient(60deg,transparent,#d9138a,#d9138a);
+            transform-origin: bottom right;
+            animation: animate linear 6s infinite;
+            animation-delay: -3s;
+         }
+
+         @keyframes animate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+         }
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">
+       
+        
+    <div class="animation">
+        <div class="login">
+        
+            <h1>
+                SIGN UP
+            </h1>
+            
+            <form action="">
+    
+            <div>
+                <label for="name" class="name"> Name </label>
+                <input type="text" name="name" id="name">
+            </div><br>
+    
+            <div>
+                <label for="email"> Email </label>
+                <input type="email" name="email" id="email">
+            </div><br>
+    
+            <div>
+                <label for="password"> Password </label>
+                <input type="password" name="password" id="password">
+            </div><br>
+    
+            <div>
+                <label for="confirm password"> Confirm Password </label>
+                <input type="password" name="confirm password" id="confirm password">
+            </div><br>
+    
+            <div>
+                <label for="contact"> Contact </label>
+                <input type="number" name="contact" id="contact">
+            </div><br>
+    
+            <div id="submit">
+                <input type="submit" value="Sign Up">
+            </div>
+    
+            </form>
+                <p class="para-1">
+                    By clicking the Sign Up button you will agree to our <br>
+                    <a href="">Term and Condition</a> and <a href="">Privacy Policy</a>
+                </p>
+        </div>
+    </div>
+    </div>    
+
+
+
+</body>
+</html>
